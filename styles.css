@@ -1,0 +1,125 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    font-size: small;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #345EF2;
+    font-size: 32px;
+}
+
+header .contact {
+    color:#000000;
+    font-size: small;
+}
+
+ul,ol {
+    padding-left: 15px;
+    margin: 0;
+}
+
+li {
+    display: list-item;
+    overflow: hidden;
+}
+
+body > ul {
+    /*list-style: none;*/
+    padding: 0;
+}
+
+body > ul > li > ol {
+    /*list-style: none;*/
+    padding: 0;
+}
+
+h2 {
+    clear: both;
+    text-align: center;
+    margin: 2px 0;
+    position: relative;
+    color: #345EF2;
+}
+
+h2 div {
+    background-color: white;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+h2 hr {
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid;
+    z-index: -1;
+}
+
+h3 {
+    display: inline;
+    margin: 0 5px 0 0;
+    font-size: 15px;
+    color: #345EF2;
+}
+
+h3:after {
+    content: ',';
+}
+
+.where {
+    display: inline;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.when {
+    float: right;
+    font-size: 14px;
+}
+
+.what {
+    clear: both;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.what ul {
+    font-style: normal;
+}
+
+.what li:before {
+    content: '- ';
+}
+
+@media screen {
+    body {
+        margin: 30px;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    ol.things > li {
+        margin: 10px;
+    }
+
+    .what {
+        margin-top: 5px;
+    }
+
+    .what ul, .what ol {
+        margin-top: 6px;
+    }
+
+    .what ul > li, .what ol > li {
+        margin-bottom: 5px;
+    }
+}
